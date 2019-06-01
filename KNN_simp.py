@@ -30,15 +30,15 @@ dataset = pandas.read_csv(url, names=names)
 #print(dataset.groupby('class').size())
 
 #univariate plots 
-
+'''
 #box and whisker plots
-#dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
-#plt.show()
+dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+plt.show()
 
 #histograms
 dataset.hist()
 plt.show()
-'''
+
 #split-out validation dataset
 array = dataset.values
 X = array[:, 0:4]
